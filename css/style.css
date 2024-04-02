@@ -27,6 +27,18 @@
 header {
     margin: 0;
 }
+/* -- Special paddings/margin/text -- */
+h1,h2,h3,h4{margin: 0;}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.general-sub{
+    font-family: "Exo" sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
 
 /* -- Heading -- */
 .heading {
@@ -106,4 +118,12 @@ letter-spacing: 2px;}
 .hvr-sweep-to-bottom:before{
     background: rgb(0, 0, 0.2)
     ; height: 130px;
+}
+
+/* -- Footer -- */
+footer{
+    background-color: #525252;
+    color: #525252;
+    min-height: 130px;
+    margin: 0;
 }
