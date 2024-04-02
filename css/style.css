@@ -69,6 +69,7 @@ header {
 .menucontainer {
     font-size: 0;
 }
+#navbar{margin: 0;}
 
 #navbar li {
     font-size: 15px;
@@ -82,7 +83,7 @@ padding: 0;}
 .menuitem a {width: 100%;
 text-decoration: none;
 color: #ffffff;
-height: 120px;
+height: 130px;
 }
 
 .menuitem a i{
@@ -100,3 +101,9 @@ text-transform: uppercase;
 font-size: 15px;
 font-weight: 300;
 letter-spacing: 2px;}
+
+/* --hover-css --*/
+.hvr-sweep-to-bottom:before{
+    background: rgb(0, 0, 0.2)
+    ; height: 130px;
+}
