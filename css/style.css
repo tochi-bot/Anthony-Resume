@@ -148,7 +148,7 @@ footer{
     color: #525252;
     min-height: 130px;
     margin: 0;
-    display: flex;
+    
 
 }
 
@@ -196,4 +196,15 @@ footer{
     padding: 20px;
     color: #fafafa; /* Adjust text color */
     font-family: "Roboto", sans-serif; /* Use Roboto font */
+}
+
+
+/* -- Three Reasons -- */
+.three-reasons-icon{
+    font-size: 28px;
+    color: #e67e22;
+}
+
+.three-reasons-heading{
+    margin-bottom: 15px;
 }
