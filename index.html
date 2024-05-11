@@ -30,6 +30,7 @@
                                 <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem "><a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a></li>
                                 <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem"><a href="resume.html" class="hvr-sweep-to-bottom" ><i class="fa-regular fa-file-user" aria-hidden="true"></i><span>Resume</span></a></li> 
                                 <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem"><a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a></li>
+                                <li class="col-6 col-sm-3 ui-menu-color-github list-inline-item menuitem"><a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Github</span></a></li>
                                 <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem"><a href="assets/cv/CV/AnthonyNwadinobi ( Data1)Updated CV.docx" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a></li>
                             </ul>
                         </div>
@@ -86,6 +87,7 @@
                             <p>anthonynwadinobi@gmail.com</p>
                         </div>
                     </div>
+                    <div id="map"></div>
 
                 </div>
                 <div class="col-md-8 bg-color-three-reasons section-column">
@@ -173,7 +175,7 @@
                 <h5 class="uppercase general-sub">Download</h5>
                 <p class="inline-block">
                     Looking for a downloadable version of my CV? Download it here.
-                    <a href="#" target="_blank" class="cv-pdf"><i class="fa fa-download" aria-hidden="true"> <span class="sr-only">Download Link</span></i></a>
+                    <a href="assets/cv/CV/AnthonyNwadinobi ( Data1)Updated CV.docx" target="_blank" class="cv-pdf"><i class="fa fa-download" aria-hidden="true"> <span class="sr-only">Download Link</span></i></a>
                 </p>
 
             </div>
@@ -234,5 +236,46 @@
         </div>
 
     </footer>
+    <script>
+
+        function initMap(){
+            var map=new google.maps.Map(document.getElementById("map"),{
+                zoom: 3,
+                center: {
+                    lat: 46.619261,
+                    lng:  -33.134766
+                }
+            }
+            )
+        };
+
+        var labels="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var locations=[
+        {
+            lat: 51.48523,
+            lng:0.14697
+        },
+
+        {
+            lat: 41.084045,
+            lng: -73.874265
+        },
+
+        {
+            lat: 40.74932,
+            lng: -73.984016
+        }
+
+        ];
+
+        var markers= locations.map(function(location, i){
+            return new google.maps.marker({
+                position: location,
+                label: labels[i % label.lenght]
+            });
+        });
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7L8n3BfBZJaJveVFE8xCNW-Lp4a4-9lg&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_commutes_v2_c" async defer></script>
 </body>
 </html>

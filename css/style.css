@@ -33,6 +33,10 @@
     background-color: #349834;
 }
 
+.ui-menu-color-github {
+    background-color: #f50776;
+}
+
 .ui-menu-color-download {
     background-color: #3498db;
 }
@@ -352,3 +356,6 @@ footer{
     }
    
 }
+
+
+div#map {min-height: 360px;}
